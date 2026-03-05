@@ -1,0 +1,21 @@
+DATA:
+  IMG_SIZE: 384
+MODEL:
+  TYPE: swinv2
+  NAME: swinv2_large_patch4_window12to24_192to384_22kto1k_ft
+  DROP_PATH_RATE: 0.2
+  SWINV2:
+    EMBED_DIM: 192
+    DEPTHS: [ 2, 2, 18, 2 ]
+    NUM_HEADS: [ 6, 12, 24, 48 ]
+    WINDOW_SIZE: 24
+    PRETRAINED_WINDOW_SIZES: [ 12, 12, 12, 6 ]
+TRAIN:
+  EPOCHS: 300
+  WARMUP_EPOCHS: 2
+  WEIGHT_DECAY: 1e-8
+  BASE_LR: 2e-05
+  WARMUP_LR: 1e-06
+  MIN_LR: 1e-06
+TEST:
+  CROP: False
