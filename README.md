@@ -74,10 +74,9 @@ CSV 컬럼 구성은 data/build_loader_deepfake.py의 구현을 기준으로 맞
 ### (Infer) 테스트 폴더/샘플 제출 파일
 추론 모드는 아래 규약을 그대로 사용합니다.
 
-./test_data/ : 테스트 파일들이 위치
-./sample_submission.csv : 대회 제공 샘플 제출 양식
-
-결과는 ./output/baseline_submission.csv 로 저장
+- ./test_data/ : 테스트 파일들이 위치
+- ./sample_submission.csv : 대회 제공 샘플 제출 양식
+- 결과는 ./output/baseline_submission.csv 로 저장
 
 ---
 
@@ -175,5 +174,5 @@ deepfake-detection-swinv2-effort/
 ---
 
 ## 8. Note
---k_residual은 residual 쪽에서 “학습시키는 특이값 성분 개수”를 의미합니다. 값이 클수록 표현력↑, 파라미터/불안정성↑ 가능.
---train_svd_bias로 SVDResidualLinear의 bias 학습 여부를 제어할 수 있습니다.
+- --k_residual은 residual 쪽에서 “학습시키는 특이값 성분 개수”를 의미합니다. 값이 클수록 표현력↑, 파라미터/불안정성↑ 가능.
+- --train_svd_bias로 SVDResidualLinear의 bias 학습 여부를 제어할 수 있습니다.
