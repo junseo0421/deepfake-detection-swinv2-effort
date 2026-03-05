@@ -61,6 +61,8 @@ pip install timm opencv-python tqdm scikit-learn pandas pyyaml
 
 ### (Train/Val) 메타데이터 CSV
 학습은 --train_csv, --val_csv를 사용합니다.
+
+
 예)
 ```
 /path/to/metadata_train.csv
